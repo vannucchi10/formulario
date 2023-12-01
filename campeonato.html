@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeonato de skate</title>
+    <link rel="stylesheet" href="style0.css">
+</head>
+<body>
+    <form id="name" onsubmit="validateForm(event);return false"> 
+    <label for="name">Nome do aluno</label> <br>
+    <input type="text" id="name" name="name" required class="puti"><br>
+
+    <label for="data">Data de nascimento</label><br>
+    <input type="date" id="data" name="data" required class="puti"><br>
+
+    <label for="email">Digite seu e-mail</label><br>
+    <input type="email" id="email" name="email" required class="puti"><br>
+
+    <label for="telefone">DIgite seu telefone com </label ><br>
+    <input type="tel" id="telefone" name="telefone" required class="puti"><br>
+
+    <label for="serie"> Selecione sua serie </label><br>
+    <select name="serie" id="serie"  class="puti"><br> 
+        <option value="serie" >1°ano</option ><br>
+        <option value="serie">2°ano</option  >
+        <option value="serie">3°ano</option  >
+        <option value="serie">4°ano</option  ><br>
+    </select ><br><br>
+
+   <label for="turno">Escolha um turno</label><br>
+    <input type="radio" id="manha" name="turno" >
+    <label for="manha">Manhã</label><br>
+    <input type="radio" id="tarde" name="turno" >
+    <label for="tarde">Tarde</label><br>
+    <input type="radio" id="noite" name="turno" >
+    <label for="noite">Noite</label> <br><br>
+
+    <label>Atividade extra-curriculares</label><br>
+    <input type="checkbox" id="teatro" name="atividade" >
+    <label for="teatro">teatro</label>
+    <input type="checkbox" id="musica" name="atividade">
+    <label for="musica">Música</label>
+    <input type="checkbox" id="ballet" name="atividade">
+    <label for="ballet">Ballet</label> <br>
+    <input type="checkbox" id="pintura" name="atividade">
+    <label for="pintura">pintura</label>
+    <input type="checkbox" id="judo" name="atividade">
+    <label for="judo">Judô </label>
+    <input type="checkbox" id="futebol" name="atividade">
+    <label for="futebol">Futebol</label><br><br>
+
+    <button type="submit">Registro</button>
+    </form>
+
+    <script src="camp.js"></script> 
+</body>
+</html>
